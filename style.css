@@ -3463,28 +3463,30 @@ After  before slider   */
 }
 .wrapper .images {
 	height: 100%;
-	width: 100%;
+	width:90%;
 	display: flex;
 }
 .wrapper .images .img-1 {
-	height: 100%;
+	height: 120% !important;
 	width: 100%;
+    margin-left: 50% !important;
 	background: url('img/after.png') no-repeat;
-	background-size: cover;
+	background-size: cover ;
 	object-position: center;
 	/* background-position: center; */
 	/* background: url("images/car.jpg") no-repeat; */
 }
 .wrapper .images .img-2 {
 	position: absolute;
-	height: 100%;
-	width: 50%;
+	height: 120%;
+	width: 45%;
 	/* filter: blur(5px); */
 	background: url('img/before.png') no-repeat;
 	background-size: cover;
 	object-position: center;
 	/* background-position: center; */
 	/* background: url("images/car.png") no-repeat; */
+    opacity: 0.5;
 }
 .wrapper .slider {
 	position: absolute;
@@ -3507,29 +3509,29 @@ After  before slider   */
 	-webkit-appearance: none;
 	cursor: col-resize;
 }
-.slider .drag-line {
+/* .slider .drag-line {
 	width: 3px;
 
 	height: 100%;
 	position: absolute;
 	left: 49.85%;
 	pointer-events: none;
-}
-.slider .drag-line::before,
+} */
+/* .slider .drag-line::before,
 .slider .drag-line::after {
 	position: absolute;
 	content: '';
 	width: 100%;
 	height: 222px;
 	background: #fff;
-}
+} */
 .slider .drag-line::before {
 	top: 0;
 }
 .slider .drag-line::after {
 	bottom: 0;
 }
-.slider .drag-line span {
+/* .slider .drag-line span {
 	height: 42px;
 	width: 42px;
 	border: 3px solid #fff;
@@ -3538,8 +3540,8 @@ After  before slider   */
 	left: 50%;
 	border-radius: 50%;
 	transform: translate(-50%, -50%);
-}
-.slider .drag-line span::before,
+} */
+/* .slider .drag-line span::before,
 .slider .drag-line span::after {
 	position: absolute;
 	content: '';
@@ -3548,7 +3550,7 @@ After  before slider   */
 	border-bottom-width: 0px;
 	border-right-width: 0px;
 	transform: translate(-50%, -50%) rotate(45deg);
-}
+} */
 .slider .drag-line span::before {
 	left: 40%;
 	border-left-color: #fff;
