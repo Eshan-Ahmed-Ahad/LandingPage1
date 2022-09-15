@@ -164,6 +164,13 @@
 .cwzzKw {
     display: none;
 }
+.cwzzKw.open{
+    display: block;
+    float: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
 @media (max-width: 64em) {
     .cwzzKw {
         display: -webkit-box;
@@ -3428,10 +3435,9 @@ a {
     }
 }
 
-.logo {
-    font-size: 25px;
-    color: #fff;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+.logo img{
+    width: 150px;
+    height: 40px;
 }
 .SirImg img{
     border-radius: 50% !important;
@@ -3449,7 +3455,16 @@ After  before slider   */
     margin-top: 80px;
 
 }
-
+.wrapper .images .img-2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.457);
+}
 .wrapper {
 	position: relative;
 	height: 100%;
@@ -3467,9 +3482,8 @@ After  before slider   */
 	display: flex;
 }
 .wrapper .images .img-1 {
-	height: 120% !important;
+	height: 100% !important;
 	width: 100%;
-    margin-left: 50% !important;
 	background: url('img/after.png') no-repeat;
 	background-size: cover ;
 	object-position: center;
@@ -3478,15 +3492,16 @@ After  before slider   */
 }
 .wrapper .images .img-2 {
 	position: absolute;
-	height: 120%;
-	width: 45%;
+	height: 100%;
+	width: 43%;
 	/* filter: blur(5px); */
-	background: url('img/before.png') no-repeat;
+	background: #265986  url('img/before.png') no-repeat;
 	background-size: cover;
 	object-position: center;
 	/* background-position: center; */
 	/* background: url("images/car.png") no-repeat; */
-    opacity: 0.5;
+
+   
 }
 .wrapper .slider {
 	position: absolute;
@@ -3509,29 +3524,29 @@ After  before slider   */
 	-webkit-appearance: none;
 	cursor: col-resize;
 }
-/* .slider .drag-line {
+.slider .drag-line {
 	width: 3px;
 
 	height: 100%;
 	position: absolute;
-	left: 49.85%;
+	left: 42.85%;
 	pointer-events: none;
-} */
-/* .slider .drag-line::before,
+} 
+ .slider .drag-line::before,
 .slider .drag-line::after {
 	position: absolute;
 	content: '';
 	width: 100%;
 	height: 222px;
 	background: #fff;
-} */
+}
 .slider .drag-line::before {
 	top: 0;
 }
 .slider .drag-line::after {
 	bottom: 0;
 }
-/* .slider .drag-line span {
+ .slider .drag-line span {
 	height: 42px;
 	width: 42px;
 	border: 3px solid #fff;
@@ -3540,8 +3555,8 @@ After  before slider   */
 	left: 50%;
 	border-radius: 50%;
 	transform: translate(-50%, -50%);
-} */
-/* .slider .drag-line span::before,
+} 
+.slider .drag-line span::before,
 .slider .drag-line span::after {
 	position: absolute;
 	content: '';
@@ -3550,7 +3565,7 @@ After  before slider   */
 	border-bottom-width: 0px;
 	border-right-width: 0px;
 	transform: translate(-50%, -50%) rotate(45deg);
-} */
+} 
 .slider .drag-line span::before {
 	left: 40%;
 	border-left-color: #fff;
@@ -3559,3 +3574,6 @@ After  before slider   */
 	left: 60%;
 	border-top-color: #fff;
 }
+ a {
+    text-decoration: none !important;
+ }

@@ -1,0 +1,5 @@
+1. Remove img ugly 2 area 
+2. Workable before after slider With Darker Color 
+3. Adding Logo 
+4. Fixing Navbar Small device 
+
