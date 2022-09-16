@@ -6,10 +6,3 @@ slider.oninput = () => {
 	dragLine.style.left = sliderVal + '%';
 	img.style.width = sliderVal + '%';
 };
-
-
-$(document).ready(function() {
-	$(".bars").on("click", function() {
-	  $("crhQIs").toggleClass("open");
-	});
-  });
